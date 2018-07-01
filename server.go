@@ -215,7 +215,7 @@ func main() {
 		defer wg.Done()
 		if err := srv.ListenAndServe(); err != http.ErrServerClosed {
 			panic(err)
-        }
+		}
 		fmt.Println("server stopped")
 	}()
 	fmt.Println("server started")
