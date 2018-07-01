@@ -14,4 +14,5 @@ This server listens on port 8080 of the local host. The following commands are s
 	GET
 	curl http://localhost:8080/stats
 	curl http://localhost:8080/hash/$num
+	curl http://localhost:8080/shutdown
 	
