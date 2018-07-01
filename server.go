@@ -227,7 +227,7 @@ func main() {
 	defer cancel()
 	if err := srv.Shutdown(ctx); err != nil {
 		panic(err)
-    }
+	}
 
 	shutdownCounter <- 0
 	wg.Wait() //finish waiting for all hash, counter and server threads
