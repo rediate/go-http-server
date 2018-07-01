@@ -217,7 +217,7 @@ func main() {
 			panic(err)
         }
 		fmt.Println("server stopped")
-    }()
+	}()
 	fmt.Println("server started")
 
 	//wait for shutdown
