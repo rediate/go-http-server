@@ -61,7 +61,7 @@ func counter(sendCounter chan<- int, getElapsed <-chan stat,
 			m[statistics.ind] = statistics.elapsed
 		case sendStats <- m:
 		case <-shutdown:
-			fmt.Println("shuting down counter")
+			fmt.Println("shutting down counter")
 			return
 		}
 	}
@@ -84,7 +84,7 @@ func reader(getKv <-chan kv, sendInd <-chan writehash, shutdown <-chan int,
 			}
 			ind.goDie <- ind.key
 		case <-shutdown:
-			fmt.Println("shuting down reader")
+			fmt.Println("shutting down reader")
 			return
 		}
 	}
